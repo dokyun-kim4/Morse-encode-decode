@@ -71,8 +71,10 @@ def decode_morse(code)->str:
     Returns:
         decoded: decoded morse code
     """
-    MORSE_INVERSE = dict((morse, letter) for letter, morse in MORSE_TABLE.items())
+    morse_inverse = dict((morse, letter) for letter, morse in MORSE_TABLE.items())
+    morse_inverse['/']=" "
+    morse_inverse['']=''
     
     morse_list = code.split(" ")
-    decoded = "".join([MORSE_INVERSE[code] for code in morse_list])
+    decoded = "".join([morse_inverse[code] for code in morse_list])
     return decoded
