@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Morse Code Encoder/Decoder</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{url_for('static', filename='liveconvert.js')}}"></script>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="https://m.media-amazon.com/images/I/71CSErlhoRL.jpg"
+             width="150"
+             height="100"/>
+        <h1>Morse code encoder</h1>
+        <textarea type="text" id="text-input" rows=3 placeholder="Type text here"></textarea>
+        <h2>Morse Code:</h2>
+        <p id="encoded-text"></p>
+
+        <h1>Morse code decoder</h1>
+        <textarea type="text" id="morse-input" rows=3 placeholder="Type morse code here" ></textarea>
+        <h2>Text:</h2>
+        <p id="decoded-text"></p> 
+    </div>
+    
+</body>
+</html>
