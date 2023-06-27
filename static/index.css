@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    text-align: center;
+}
+
+#encoded-text,
+#decoded-text {
+    font-size: 30px;
+    font-weight: bold;
+}
